@@ -1,6 +1,9 @@
 ﻿Console.Write("masukan nama pelanggan: ");
 string namaPelanggan = Console.ReadLine();
 
+Console.Write("Masukan nama dokumen: ");
+int namaDokumen = int.Parse(Console.ReadLine());
+
 Console.Write("Masukan jumlah halaman: ");
 int jumlahHalaman = int.Parse(Console.ReadLine());
 
@@ -15,6 +18,7 @@ int totalBayar = subtotal + biayaAdministrasi;
 Console.WriteLine();
 Console.WriteLine("=== RINNCIAN PENCETAKAN ===");
 Console.WriteLine($"Nama pelanggan = {namaPelanggan}");
+Console.WriteLine($"Nama dokumen = {namaDokumen}");
 Console.WriteLine($"Jumlah halaman = {jumlahHalaman}");
 Console.WriteLine($"Hargar per halaman = {hargaPerHalaman}");
 Console.WriteLine($"Subtotal = {subtotal}");
